@@ -7,8 +7,6 @@ int main() {
     vector<int> vec(3,5);
     printVector(vec);
     
-    cout << "Size: " << vec.size() << endl;
-    cout << "Capacity: " << vec.capacity() << endl;
     cout << "Max Size: " << vec.max_size() << endl;
     
     cout << "Is Empty before pop: " << vec.empty() << endl;
@@ -27,6 +25,15 @@ int main() {
     cout << "Back: " << vec.back() << endl;
     
     printVector(vec);
+    
+    cout << "--------------------------------" << endl;
+    vector<int> vec2;
+    vec2.push_back(1);
+    vec2.push_back(2);
+    // When we use push_back, the capacity of the vector gets doubled(size * 2)
+    // this is the reason the vector size is 3 but capacity is 4
+    cout << "Size: " << vec2.size() << endl;
+    cout << "Capacity: " << vec2.capacity() << endl;
     
     return 0;
 }
