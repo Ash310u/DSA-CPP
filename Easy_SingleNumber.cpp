@@ -15,7 +15,7 @@ class Solution {
 
 int main() {
     Solution s;
-    vector<int> nums = {4, 2, 1, 2, 1};
+    vector<int> nums = {4, 16, 10, 4, 16};
     cout << s.singleNumber(nums) << endl;
     return 0;
 }
